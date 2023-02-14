@@ -1,0 +1,52 @@
+.wrapper-one {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  .second  {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-50%);
+    transition: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 464px;
+  }
+
+  .wrapper-two {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  .first {
+    position: absolute;
+    right: 0;
+    top: -280px;
+    transform: translate(-50%);
+    transition: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 260px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 785px) {
+    .first {
+        position: absolute;
+        right: 0;
+        top: -100px;
+        transform: translate(-50%);
+        transition: 50%;
+        width: 100%;
+        height: auto;
+        max-width: 217px;
+      }
+      .second  {
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(-50%);
+        transition: 50%;
+        width: 100%;
+        height: auto;
+        max-width: 320px;
+      }
+    }
